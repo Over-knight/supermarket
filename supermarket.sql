@@ -23,5 +23,9 @@ products varchar(15) not null,
 price decimal(10,2)
 );
 
+select seller_name, product_name
+from sellers s
+join products p 
+on p.seller_id = s.id
 
 

@@ -28,4 +28,7 @@ from sellers s
 join products p 
 on p.seller_id = s.id
 
-
+select product_name, buyer_name
+from products p
+join buyers b
+on b.product_id = p.id
